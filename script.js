@@ -1,6 +1,6 @@
 function calcularPesoIdeal() {
 
-    const altura = parseInt(document.getElementById('altura').value);
+    const altura = parseInt(document.getElementById('labelAltura').value);
     const sexo = document.getElementById('sexo').value;
 
     if (!altura || altura <= 0) {
@@ -15,7 +15,7 @@ function calcularPesoIdeal() {
         pesoIdeal = 52 + (0.67 * (altura - 152.4));
     }
 
-    document.getElementById('resultado').innerText = `Seu peso ideal -> ${pesoIdeal.toFixed(2)} kg.`;
+    document.getElementById('resultado').innerText = `Seu Peso Ideal -> ${pesoIdeal.toFixed(2)} kg.`;
 }
 
 function ativarMusica(){
