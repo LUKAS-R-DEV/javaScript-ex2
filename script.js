@@ -1,4 +1,5 @@
-function calcularPesoIdeal(){
+function calcularPesoIdeal() {
+
     const altura = parseInt(document.getElementById('altura').value);
     const sexo = document.getElementById('sexo').value;
 
@@ -15,4 +16,10 @@ function calcularPesoIdeal(){
     }
 
     document.getElementById('resultado').innerText = `Seu peso ideal -> ${pesoIdeal.toFixed(2)} kg.`;
+}
+
+function ativarMusica(){
+    var audio = document.getElementById('audio');
+    audio.play();
+
 }
