@@ -20,6 +20,12 @@ function calcularPesoIdeal() {
 
 function ativarMusica(){
     var audio = document.getElementById('audio');
-    audio.play();
+    
+    if(audio.paused){
+        audio.play();
+
+    }else{
+        audio.pause();
+    }
 
 }
